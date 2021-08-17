@@ -79,6 +79,11 @@ ul {
   min-width: 175px;
 } 
 
+ul li a:hover{
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .hero{
   display: flex;
   flex-direction: column;
@@ -119,6 +124,7 @@ p{
   padding:10px 60px ;
   background-color: var(--blueCall-to-action);
   border-radius: 20px;
+  outline: none;
 }
 
 .btn:hover{
@@ -136,7 +142,7 @@ p{
 
 /* features section  */
 .all-features{
-  margin: 6rem 15px;
+  margin: 6.2rem 15px;
   display: grid;
   grid-gap:4rem
 }
@@ -160,6 +166,12 @@ p{
   justify-content: center;
   /* align-items: center; */
   margin: 5rem 15px;
+}
+
+.img-2{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .work-link a{
@@ -188,7 +200,7 @@ p{
 /* .testimonials-cards section  */
 .all-testimonials{
   padding: 15px;
-  margin: 6rem 0;
+  margin: 6rem 0 3rem;
   display: grid;
   grid-gap:2rem;
   position: relative;
@@ -206,6 +218,7 @@ p{
   padding: 15px 25px 20px 20px;
   background-color: var(--darktestimoinals);
   border-radius: 5px;
+  max-width: 325px;
 }
 .testimonials-cards p{
   font-size: 12px;
@@ -255,7 +268,7 @@ p{
   z-index: 2;
 }
 
-.connect{
+.form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -266,6 +279,7 @@ p{
   background-color: var(--White);
   padding: 10px 20px;
   border-radius: 20px;
+  outline: none;
 }
 
 .connect-button{
@@ -275,29 +289,40 @@ p{
 /* footer section  */
 .footer {
   background-color: var(--darkFooter);
-  padding: 120px 15px 30px;
+  padding: 170px 15px 30px;
   font-size: 15px;
   overflow: visible;
   z-index: -1;
 }
 
+.bottom-logo{
+  width: 20%;
+}
 .bottom-logo {
   margin: 20px 0;
 }
 
 .bottom-grid {
   display: grid;
-  grid-template-rows: 200px 200px auto;
+  grid-template-rows: 100px 100px 200px auto;
   grid-gap: 1rem;
 }
 
 .contact {
   display: grid;
   grid-template-columns: 30px auto;
+  grid-template-rows: 100px;
 }
 
+.contact2 {
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-template-rows: 50px 50px;
+}
+
+
 .contact-icon {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .pages {
@@ -340,8 +365,8 @@ p{
 }
 
 .soical-links i:hover {
-  color: var(--lightRedError);
-  border: 1px solid var(--lightRedError);
+  color: var(--cyanCall-to-action);
+  border: 1px solid var(--cyanCall-to-action);
 }
 
 .copy-right {
@@ -357,3 +382,123 @@ p{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* laptop view  */
+
+@media all and (min-width:1440px){
+  h2{
+    font-size: 30px;
+  }
+
+  .header{
+    background-image: url(../images/bg-curvy-desktop.svg);
+  } 
+
+  .nav{
+    padding: 15px 25px;
+  }
+
+  .header-logo{
+    width: 50%;
+  }
+
+  ul {
+    min-width: 225px;
+  } 
+
+  .hero-bottom{
+    max-width: 500px;
+    margin: 30px 0;
+  }
+
+  .img{
+    width: 40%;
+  }
+  .all-features{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 6.5rem;
+  }
+
+  .features-card {
+    max-width: 375px;
+  }
+
+  .work-card{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .img-2{
+    max-width: 50%;
+  }
+
+  .all-testimonials{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .all-testimonials::before{
+    top: -12%;
+    left: 1%;
+  }
+
+  .call-to-action{
+    width: 700px; 
+  }
+
+  .email{
+    height: 40px;
+    transform: translatey(50%);
+    padding: 10px 50px;
+  }
+  
+  .form{
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .footer{
+    padding: 90px 90px 20px;
+  }
+
+  .bottom-logo{
+    width: 10%;
+  }
+
+  .bottom-grid {
+    display: grid;   
+    grid-template-columns: 420px 250px 300px auto;
+    grid-template-rows: auto;
+    gap: 3rem;
+    margin-top: 20px;
+  }
+
+  .contact-icon {
+    margin-top: 5px;
+  }
+
+  .contact{
+    /* grid-gap: 1.2rem; */
+    justify-self: center;
+  }
+
+  .contact p , .contact2 p{
+    margin: 0;
+    padding: 0;
+  }
+  .pages {
+    flex-direction: row;
+    gap: 4.5rem;
+  }
+
+  .first-page-links , .second-page-links{
+    gap: 1rem;
+  }
+
+  .copy-right{
+    text-align: right;
+  }
+}
+
