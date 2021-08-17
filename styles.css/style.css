@@ -53,7 +53,7 @@ li{
 /* header with a navbar and hero section */
 .header{
   padding: 20px;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: var(--darkIntroEmail);
   background-image: url(../images/bg-curvy-mobile.svg);
   background-repeat: no-repeat;
