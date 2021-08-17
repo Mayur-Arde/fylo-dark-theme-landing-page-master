@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Fylo landing page with dark theme and features grid</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="./styles.css/normalize.css">
   <link rel="stylesheet" href="./styles.css/style.css">
 
 </head>
+
 <body>
   <!-- header with a navbar and hero -->
   <header class="header">
-    <nav>
+    <nav class="nav">
       <div class="nav-logo">
-        <img src="./images/logo.svg" alt="header-logo" >
+        <img src="./images/logo.svg" alt="header-logo" class="header-logo">
       </div>
       <div class="navbar">
         <ul>
@@ -28,14 +33,17 @@
         </ul>
       </div>
     </nav>
-    <head class="hero">
+    <hero class="hero">
       <img src="./images/illustration-intro.png" alt="header" class="img">
       <div class="hero-bottom">
         <h2 class="hero-heading">All your files in one secure location, accessible anywhere.</h2>
-        <p class="hero-sub-heading">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
-        <a href="#" class="btn">Get Started</a>
+        <p class="hero-sub-heading">Fylo stores all your most important files in one secure location. Access them
+          wherever you need, share and collaborate with friends family, and co-workers.</p>
+        <div class="link-button">
+          <a href="#" class="btn">Get Started</a>
+        </div>
       </div>
-    </head>
+    </hero>
   </header>
   <!-- main -->
   <main class="main">
@@ -45,55 +53,65 @@
         <img src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere" class="features-img">
         <div class="features-bottom">
           <h3>Access your files, anywhere</h3>
-          <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+          <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you
+            everywhere.</p>
         </div>
       </div>
       <div class="features-card">
         <img src="./images/icon-security.svg" alt="icon-security" class="features-img">
         <div class="features-bottom">
           <h3>Security you can trust</h3>
-          <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+          <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow
+            to help secure your files.</p>
         </div>
       </div>
       <div class="features-card">
         <img src="./images/icon-collaboration.svg" alt="icon-collaboration" class="features-img">
         <div class="features-bottom">
           <h3>Real-time collaboration</h3>
-          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+            attachments required.</p>
         </div>
       </div>
       <div class="features-card">
         <img src="./images/icon-any-file.svg" alt="icon-any-file" class="features-img">
         <div class="features-bottom">
           <h3>Store any type of file</h3>
-          <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+          <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types
+            to be securely stored and shared.</p>
         </div>
       </div>
     </section>
     <!-- fylo works section  -->
-    <section class="works">
-      <img src="./images/illustration-stay-productive.png" alt="">
+    <section class="work-card">
+      <img src="./images/illustration-stay-productive.png" alt="productive-img" class="img">
       <h2>Stay productive, wherever you are</h2>
-      <P>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</P>
-      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      <a href="#">see how Fylo works <img src="./images/icon-arrow.svg" alt="icon-arrow" class="arrow"> </a>
+      <P>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage
+        needs.</P>
+      <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email
+        attachments required.</p>
+      <div class="work-link">
+        <a href="#">see how Fylo works <img src="./images/icon-arrow.svg" alt="icon-arrow" class="arrow"> </a>
+      </div>
     </section>
     <!-- testimonial section -->
     <section class="all-testimoinals">
       <div class="testimoinals-cards">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become
+          a well-oiled collaboration machine.</p>
         <div class="testimoinals-blog">
-          <img src="./images/profile-1.jpg" alt="profile-img" class="testimoinals-blog-img" >
+          <img src="./images/profile-1.jpg" alt="profile-img" class="testimoinals-blog-img">
           <div class="testimoinals-blog-text">
-          <p class="testimoinals-blog-heading">Satish Patel</p>
-          <p class="testimonials-blog-position">Founder & CEO, Huddle</p>
+            <p class="testimoinals-blog-heading">Satish Patel</p>
+            <p class="testimonials-blog-position">Founder & CEO, Huddle</p>
           </div>
         </div>
       </div>
       <div class="testimoinals-cards">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become
+          a well-oiled collaboration machine.</p>
         <div class="testimoinals-blog">
-          <img src="/images/profile-2.jpg" alt="profile-img" class="testimoinals-blog-img" >
+          <img src="/images/profile-2.jpg" alt="profile-img" class="testimoinals-blog-img">
           <div class="testimoinals-blog-text">
             <p class="testimoinals-blog-heading">Bruce McKenzie</p>
             <p class="testimonials-blog-position">Founder & CEO, Huddle</p>
@@ -101,9 +119,10 @@
         </div>
       </div>
       <div class="testimoinals-cards">
-        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become
+          a well-oiled collaboration machine.</p>
         <div class="testimoinals-blog">
-          <img src="./images/profile-3.jpg" alt="profile-img" class="testimoinals-blog-img" >
+          <img src="./images/profile-3.jpg" alt="profile-img" class="testimoinals-blog-img">
           <div class="testimoinals-blog-text">
             <p class="testimoinals-blog-heading">Iva Boyd</p>
             <p class="testimonials-blog-position">Founder & CEO, Huddle</p>
@@ -114,11 +133,12 @@
     <!-- call to action section  -->
     <section class="call-to-action">
       <h3>Get early access today</h3>
-      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p> 
+      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
+        our support team would be happy to help you.</p>
       <div class="connect">
-        <input type="email" id="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" placeholder="email@example.com" required> 
-       <a href="#" class="btn">Get Started For Free</a>
+        <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30"
+          placeholder="email@example.com" required>
+        <a href="#" class="btn">Get Started For Free</a>
       </div>
     </section>
   </main>
@@ -243,4 +263,5 @@
     </p>
   </footer> -->
 </body>
+
 </html>
