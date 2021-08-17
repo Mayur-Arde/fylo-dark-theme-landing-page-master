@@ -26,6 +26,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: black
   /* font-family: 'Raleway', sans-serif; */
 }
 
@@ -33,6 +34,86 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+
+
+/* footer section  */
+.footer {
+  background-color: var(--darkFooter);
+  color: white;
+  padding: 100px 15px 30px;
+  font-size: 15px;
+  overflow: visible;
+  z-index: -1;
+}
+
+.bottom-logo {
+  margin: 20px 0;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-rows: 200px 200px auto;
+  grid-gap: 1rem;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 30px auto;
+}
+
+.contact-icon {
+  margin-top: 5px;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pages a:hover{
+  text-decoration: underline;
+}
+
+.first-page-links , .second-page-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.soical-links {
+  text-align: center;
+}
+
+.soical-links i {
+  border-radius: 50%;
+  border: 1px solid #ebfbff;
+  padding: 0.55em 0.7em;
+  margin: 0 5px;
+}
+
+.fa-facebook-f:before {
+  content: '\f39e';
+}
+
+.fa-twitter:before {
+  content: '\f099';
+}
+
+.fa-instagram:before {
+  content: '\f16d';
+}
+
+.soical-links i:hover {
+  color: var(--lightRedError);
+  border: 1px solid var(--lightRedError);
+}
+
+.copy-right {
+  margin: 20px 0;
+  text-align: center;
 }
 
 /* attribution */
