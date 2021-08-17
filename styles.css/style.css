@@ -89,7 +89,7 @@ ul li a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 70px 0;
   text-align: center;
 }
 
@@ -389,6 +389,7 @@ p{
 
   .header{
     background-image: url(../images/bg-curvy-desktop.svg);
+    margin: 25px 0;
   } 
 
   .nav{
