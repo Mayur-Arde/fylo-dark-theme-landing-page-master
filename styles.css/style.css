@@ -136,7 +136,7 @@ p{
 
 /* features section  */
 .all-features{
-  margin: 35px 15px;
+  margin: 6rem 15px;
   display: grid;
   grid-gap:4rem
 }
@@ -159,7 +159,7 @@ p{
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  margin: 35px 15px;
+  margin: 5rem 15px;
 }
 
 .work-link a{
@@ -168,12 +168,114 @@ p{
   align-items: center;
   gap:5px;
   color: var(--cyanCall-to-action);
+  position: relative;
+  /* text-decoration: underline; */
+}
+
+.work-link a::after{
+  content: '';
+  position:absolute;
+  border-bottom: 1px solid var(--cyanCall-to-action);
+  width: 150px;
+  top: 100%;
+}
+.work-link a:hover , .work-link a:hover::after{
+  color: var(--White);
+  border-bottom: 1px solid var(--White); 
+  width: 150px;
+}
+
+/* .testimonials-cards section  */
+.all-testimonials{
+  padding: 15px;
+  margin: 6rem 0;
+  display: grid;
+  grid-gap:2rem;
+  position: relative;
+}
+
+.all-testimonials::before{
+  content: url(../images/bg-quotes.png);
+  position: absolute;
+  top: -4%;
+  left: 7%;
+  z-index: -1;
+}
+
+.testimonials-cards{
+  padding: 15px 25px 20px 20px;
+  background-color: var(--darktestimoinals);
+  border-radius: 5px;
+}
+.testimonials-cards p{
+  font-size: 12px;
+}
+
+.testimoinals-blog{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.testimoinals-blog-img{
+  width: 30px;
+  border-radius: 50%;
+  border: 0.125rem solid var(--darkMain);
+}
+
+.testimonials-blog-right{
+  margin-left: 10px;
+  color: var(--lightGrayishBlue);
+}
+
+.testimonials-blog-right p{
+  padding: 0;
+}
+
+.testimonials-blog-right .testimonials-blog-heading{
+  font-weight: 700;
+  color: var(--White);
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 425px; */
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.299);
+  padding: 2rem;
+  transform: translateY(50%);
+  position: relative;
+  background-color: var(--darkIntroEmail);
+  z-index: 2;
+}
+
+.connect{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.email{
+  background-color: var(--White);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.connect-button{
+  margin: 20px 0;
 }
 
 /* footer section  */
 .footer {
   background-color: var(--darkFooter);
-  padding: 100px 15px 30px;
+  padding: 120px 15px 30px;
   font-size: 15px;
   overflow: visible;
   z-index: -1;
