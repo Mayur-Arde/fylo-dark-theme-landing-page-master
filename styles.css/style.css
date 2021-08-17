@@ -312,12 +312,14 @@ p{
   display: grid;
   grid-template-columns: 30px auto;
   grid-template-rows: 100px;
+  grid-gap: 0.5rem;
 }
 
 .contact2 {
   display: grid;
   grid-template-columns: 30px auto;
   grid-template-rows: 50px 50px;
+  grid-gap: 0.5rem;
 }
 
 
@@ -367,11 +369,6 @@ p{
 .soical-links i:hover {
   color: var(--cyanCall-to-action);
   border: 1px solid var(--cyanCall-to-action);
-}
-
-.copy-right {
-  margin: 20px 0;
-  text-align: center;
 }
 
 /* attribution */
@@ -480,7 +477,6 @@ p{
   }
 
   .contact{
-    /* grid-gap: 1.2rem; */
     justify-self: center;
   }
 
@@ -495,10 +491,6 @@ p{
 
   .first-page-links , .second-page-links{
     gap: 1rem;
-  }
-
-  .copy-right{
-    text-align: right;
   }
 }
 
